@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-I'm a (mostly) self-taught software developer; my actual degree is a MSc in Theoretical Chemistry. I started writing my first programs when I was 12. Nowadays, I regularly develop in C++, C#, Java, TypeScript, and have started picking up Rust. Here are some of my public projects that you may find of interest.
+I'm a (mostly) self-taught software developer; my actual degree is a MSc in Theoretical Chemistry. I started writing my first programs when I was 12. Nowadays, I regularly develop in C++, C#, Java, TypeScript, and have started picking up Rust. Here are some of my public projects that you may find of interest, including some I have contributed to.
 
 ## C++
 
