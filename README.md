@@ -14,5 +14,6 @@ I'm a (mostly) self-taught software developer; my actual degree is a MSc in Theo
 
 
 1. [DBClientFiles.NET](https://github.com/Warpten/DBClientFiles.NET) is a library designed to parse DBC, DB2 and derivate file formats from World of Warcraft's game client, with a focus on speed and memory efficiency, by leveraging `System.Linq.Expressions` to generate code at runtime. It is a newer version of [DBFilesClient.NET](https://github.com/Warpten/DBFilesClient.NET), but has been put on hold due to lack of time on my end.
-2. [ADBC](https://github.com/Warpten/ADBC2) is very similar to the above, except that it interfaces with World of Warcraft's actual archive files, and provides a fully featured GUI with support for foreign keys, export to CSV, and visualization of textures referenced by DBC files.
-3. [MeshViewer](https://github.com/Warpten/MeshViewer) is a .NET application able to render serverside geometry at the location of the player in World of Warcraft, by externally reading process memory. It uses [OpenTK](https://opentk.net/)
+2. [WowSniffExplorer](https://github.com/Warpten/WowSniffExplorer) is an attempt at creating a GUI to process and analyze network dumps of World of Warcraft's protocol.
+3. [ADBC](https://github.com/Warpten/ADBC2) is very similar to the above, except that it interfaces with World of Warcraft's actual archive files, and provides a fully featured GUI with support for foreign keys, export to CSV, and visualization of textures referenced by DBC files.
+4. [MeshViewer](https://github.com/Warpten/MeshViewer) is a .NET application able to render serverside geometry at the location of the player in World of Warcraft, by externally reading process memory. It uses [OpenTK](https://opentk.net/)
