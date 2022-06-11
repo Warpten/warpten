@@ -1,27 +1,18 @@
 ### Hi there 👋
 
-Want to take a look at my .... less vaporware ... projects?
+I'm a (mostly) self-taught software developer. I started writing my first programs when I was 12. Nowadays, I regularly develop in C++, C#, Java, TypeScript, and have started picking up Rust. Here are some of my public projects that you may find of interest.
 
-- [DBClientFiles.NET](https://github.com/Warpten/DBClientFiles.NET) is a library able to parse DBC, DB2 and derivative file formats from World of Warcraft, with a focus on speed and memory efficiency. Uses `System.Linq.Expressions` to generate code at runtime. This project is mostly on hold for now, as I've lost interest. [ADBC](https://github.com/Warpten/ADBC2) was a similar project, except it was a fully features GUI with support for foreign keys and game file lookup (for exemple, displaying the loading screen associated with a map)
-- [MeshViewer](https://github.com/Warpten/MeshViewer) is a relatively simple .NET application able to display the serverside geometry at any location in World of Warcraft, by externally reading the memory of the game client. Uses OpenTK.
-- [WowSniffExplorer](https://github.com/Warpten/WowSniffExplorer) is a program designed to analyze and consolidate network data analyzed from the server-client communication protocol of World of Warcraft in an user friendly and intuitive way.
-- [hzdnptr](https://github.com/Warpten/hzdnptr) is an injected DLL intended to attempt to stabilize the early versions of Horizon: Zero Dawn's PC release, which contained a custom equivalent of `assert(false)` and triggered under some circumstances during play.
-- [snippetspp](https://github.com/Warpten/snippetspp) contains some of the code I've used in different personal projets. 
-  One is Brigadier, a header-only command parser implementation.
-  The other is a custom implementation of a `std::variant`. It lacks move and copy constructors. This version is not final.
-- [vk_jenkins](https://github.com/Warpten/vk_jenkins) An experiment with compute shaders and Vulkan to bruteforce jenkins hashes. CUDA implementations (such as [this one](https://github.com/barncastle/CASC-Bruteforcer) by barncastle) far outperforms this.
+## C++
 
-<!--
-**Warpten/warpten** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+1. [TrinityCore](https://github.com/TrinityCore/TrinityCore) is an open-source cross-platform MMORPG server framework. It uses [Boost](https://www.boost.org), [MariaDB](http://mariadb.org), [Grafana](https://grafana.com/), [InfluxDB](https://www.influxdata.com/), [CMake](https://cmake.org/), and [OpenSSL](https://www.openssl.org/).
+3. [Dread](https://github.com/Warpten/Dread) is an [IDA Pro](https://hex-rays.com/) plugin designed to help static analysis of Metroid Dread. It uses IDA's own APIs as well as [Clang](https://clang.llvm.org/) (specifically, Clang's AST matchers) to analyze pseudocode and derive information that is then used to produce C header files, or automate reverse engineering. Development is ongoing.
+4. [hzdnptr](https://github.com/Warpten/hzdnptr) is an injectable DLL designed to patch offending assembly in Horizon Zero Dawn's early PC releases (`*((volatile int*)0) = 0xDEADCA7;` to be exact), which triggering during play and caused the game to crash. It uses [Boost](https://www.boost.org), minhook, [fmt](https://github.com/fmtlib/fmt), [Zydis](https://github.com/zyantific/zydis) and [spdlog](https://github.com/gabime/spdlog).
+5. [snippetspp](https://github.com/Warpten/snippetspp) is an umbrella repository where I push code I use in some of my projects (some of which are not on GitHub). One in particular is a simple single-header command parser.
+6. [vk_jenkins](https://github.com/Warpten/vk_jenkins) is an experiment in writing compute shaders to bruteforce Jenkins hashes.
 
-Here are some ideas to get you started:
+## C#
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+1. [DBClientFiles.NET](https://github.com/Warpten/DBClientFiles.NET) is a library designed to parse DBC, DB2 and derivate file formats from World of Warcraft's game client, with a focus on speed and memory efficiency, by leveraging `System.Linq.Expressions` to generate code at runtime. It is a newer version of [DBFilesClient.NET](https://github.com/Warpten/DBFilesClient.NET), but has been put on hold due to lack of time on my end.
+2. [ADBC](https://github.com/Warpten/ADBC2) is very similar to the above, except that it interfaces with World of Warcraft's actual archive files, and provides a fully featured GUI with support for foreign keys, export to CSV, and visualization of textures referenced by DBC files.
+3. [MeshViewer](https://github.com/Warpten/MeshViewer) is a .NET application able to render serverside geometry at the location of the player in World of Warcraft, by externally reading process memory. It uses [OpenTK](https://opentk.net/)
